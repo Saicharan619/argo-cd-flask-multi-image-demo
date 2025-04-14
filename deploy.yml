@@ -4,7 +4,7 @@ metadata:
   name: app1
   labels:
     app: frontend
-spec:
+spec:https://github.com/Saicharan619/argo-cd-flask-multi-image-demo/blob/main/deploy.yml
   replicas: 3  # Fixed typo
   selector:
     matchLabels:
