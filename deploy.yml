@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: flask-container
-          image: saicharan12121/flaskapp:v2
+          image: saicharan12121/flaskapp:v1
           ports:
             - containerPort: 5000
 ---
