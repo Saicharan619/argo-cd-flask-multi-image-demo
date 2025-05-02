@@ -1,1 +1,65 @@
+# Argo CD - Flask App Deployment Demo with Rollback
 
+This project demonstrates deploying a Flask application using **Argo CD** with multiple Docker images and showcases Argo CD's **rollback feature**.
+
+---
+
+## 🔧 Technologies Used
+
+- **Kubernetes**
+- **Argo CD**
+- **Docker**
+- **Flask**
+- **GitHub**
+
+---
+
+## 📂 Project Structure
+
+This project deploys a Flask application using two different versions of Docker images:
+
+- `saicharan12121/flaskapp:v1`
+- `saicharan12121/flaskapp:v2`
+
+---
+
+## 🚀 What I Did
+
+1. **Initial Deployment**  
+   - Deployed the application using **v1 image** via Argo CD.
+   - App name in Argo CD: `demo-version`
+
+2. **Image Update**  
+   - Updated the manifest in GitHub to use `v2` image.
+   - Committed & pushed the change.
+   - Argo CD detected the change and updated the deployment automatically.
+
+3. **Rollback**  
+   - Used **Argo CD's rollback feature** to revert the app back to version `v1`.
+
+---
+
+## 🌐 Live App (via LoadBalancer)
+
+Access the running app at:  
+**http://34.17.44.125:5000/**
+
+---
+
+## 📸 Screenshots / Demo
+
+https://drive.google.com/file/d/1JdC59EjVq54unwASLJZewSyNtwgdK9gN/view?usp=sharing
+---
+
+## 🔗 Links
+
+- 🔹 GitHub Repo: [argo-cd-flask-multi-image-demo](https://github.com/Saicharan619/argo-cd-flask-multi-image-demo.git)
+- 🔹 DockerHub: [saicharan12121/flaskapp](https://hub.docker.com/r/saicharan12121/flaskapp)
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork, clone, and play around with the manifests. Contributions and suggestions are welcome!
+
+---
